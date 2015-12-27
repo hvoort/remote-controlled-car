@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <title>CrazyDriver Project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./justified-nav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+</head>
+
+  <body>
+
+    <div class="container">
+
+      <img class="img-responsive" src="bigcar.png" style="margin: -40% 0 -10% 0">
+
+      <!-- The justified navigation menu is meant for single line per list item.
+           Multiple lines will require custom code not provided by Bootstrap. -->
+      <!--<div class="masthead">-->
+        <!--<h3 class="text-muted" style="text-align: center">Crazy Driver</h3>-->
+        <!--<nav>-->
+          <!--<ul class="nav nav-justified">-->
+            <!--<li class="active"><a href="#">Home</a></li>-->
+            <!--<li><a href="#poem">Poem</a></li>-->
+            <!--<li><a href="#driving">Driving</a></li>-->
+          <!--</ul>-->
+        <!--</nav>-->
+      <!--</div>-->
+
+
+      <!-- Jumbotron -->
+      <!--<div class="jumbotron">-->
+        <!--<h1>Gedicht deel 2!</h1>-->
+        <!--<p class="lead">Cras justo odio, dapibus ac facilisis in, -->
+<!--egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor -->
+<!--mauris condimentum nibh, ut fermentum massa justo sit amet.</p>-->
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>-->
+      <!--</div>-->
+
+      <!-- Example row of columns -->
+        <div style="margin: 0;" class="btn-toolbar">
+            <h2>Verander de textgrootte:</h2>
+            <div class="btn-group" id="font-size">
+                <button class="btn">S</button>
+                <button class="btn">N</button>
+                <button class="btn">L</button>
+                <button class="btn btn-info">XL</button>
+                <button class="btn">OPA</button>
+            </div>
+        </div>
+        <script type="application/javascript">
+            $(document).ready(function () {
+                $("#font-size").find("button").click(function (e) {
+                    var size = 1;
+                    switch ($(e.target).text()) {
+                        case "S": size = .9; break;
+                        case "N": size = 1; break;
+                        case "L": size = 1.2; break;
+                        case "XL": size = 1.4; break;
+                        case "OPA": size = 1.8; break;
+                    }
+                    $("body").css({'font-size': size + 'em'});
+                    $(e.target).parent().find("button.btn-info").removeClass("btn-info");
+                    $(e.target).addClass("btn-info");
+                });
+            });
+        </script>
+      <!--<div class="row">-->
+        <!--<div class="col-lg-4">-->
+        <!--</div>-->
+        <!--<div class="col-lg-4">-->
+          <!--<h2>Heading</h2>-->
+          <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce -->
+<!--dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut -->
+<!--fermentum massa justo sit amet risus. Etiam porta sem malesuada magna -->
+<!--mollis euismod. Donec sed odio dui. </p>-->
+          <!--<p><a class="btn btn-primary" href="#" role="button">View details »</a></p>-->
+       <!--</div>-->
+        <!--<div class="col-lg-4">-->
+          <!--<h2>Heading</h2>-->
+          <!--<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis -->
+<!--in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. -->
+<!--Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,-->
+ <!--ut fermentum massa.</p>-->
+          <!--<p><a class="btn btn-primary" href="#" role="button">View details »</a></p>-->
+        <!--</div>-->
+      <!--</div>-->
+        <h2>Let's drive!</h2>
+       <table style="text-align: center; width: 100%;" >
+
+           <tr>
+               <td colspan="3"><a class="btn btn-primary" href="#" role="button" id="DRIVE">FORWARD</a></td>
+           </tr>
+           <tr><td colspan="3">&nbsp;</td></tr>
+           <tr>
+               <td><a class="btn btn-primary" href="#" role="button" id="LEFT">LEFT</a></td>
+               <td></td>
+               <td><a class="btn btn-primary" href="#" role="button" id="RIGHT">RIGHT</a></td>
+           </tr>
+           <tr><td colspan="3">&nbsp;</td></tr>
+           <tr><td colspan="3">&nbsp;</td></tr>
+           <tr>
+               <td colspan="3">
+                   <div class="btn-group" id="speed">
+                       <button class="btn btn-info">SLOW</button>
+                       <button class="btn">NORMAL</button>
+                       <button class="btn">FAST</button>
+                       <button class="btn">!TURBO!</button>
+                   </div>
+               </td>
+           </tr>
+           <tr><td colspan="3">&nbsp;</td></tr>
+           <tr><td colspan="3">&nbsp;</td></tr>
+           <tr>
+               <td colspan="3">
+                   <div class="btn-group">
+                       <button class="btn" onclick="play(this, 'open.mp3');">Unlock/Lock</button>
+                       <button class="btn" onclick="play(this, 'start.mp3');">Start Engine</button>
+                       <button class="btn" onclick="play(this, 'tuut.mp3');">TUUT</button>
+                       <button class="btn" onclick="play(this, 'knipper.mp3');">Blinker</button>
+                   </div>
+               </td>
+           </tr>
+       </table>
+
+
+
+        <script type="application/javascript">
+
+            function play(el, song) {
+                $.get("api.php", {
+                    'play': 't',
+                    'song': song
+                });
+
+                $(el).attr('disabled', 'disabled').addClass('btn-success');
+                setTimeout(function () {
+                    $(el).removeAttr('disabled').removeClass('btn-success');
+                }, 400);
+            }
+
+            function delayAndPlay(delay, el, song) {
+                setTimeout((function (el, song) {
+			
+			return function () {
+                    play(el, song);
+};
+}(el, song))
+                , delay);
+            }
+
+            $(document).ready(function () {
+                var speed = 10, blocked = false;
+
+                $("#speed").find("button").click(function (e) {
+                    switch ($(e.target).text()) {
+                        case "SLOW": speed = 10; break;
+                        case "NORMAL": speed = 25; break;
+                        case "FAST": speed = 50; break;
+                        case "!TURBO!": speed = 100; break;
+                    }
+                    $(e.target).parent().find("button.btn-info").removeClass("btn-info");
+                    $(e.target).addClass("btn-info");
+                });
+
+                function block(e, time) {
+                    blocked = true;
+                    $("#DRIVE, #LEFT, #RIGHT").attr('disabled','disabled');
+                    $(e.target).addClass("btn-success");
+                    setTimeout(function () {
+                        $("#DRIVE, #LEFT, #RIGHT").removeAttr('disabled');
+                        $(e.target).removeClass("btn-success");
+                        blocked = false;
+                    }, time);
+                }
+
+                function move(e, direction, duration) {
+                    if (blocked) return;
+                    block(e, duration);
+                    $.get("api.php", {
+                        'move': 't',
+                        'direction': direction,
+                        'speed': speed
+                    });
+                }
+
+                $("#DRIVE").click(function (e) {
+                    e.preventDefault();
+                    move(e, 'FW', 500);
+                });
+
+                $("#LEFT").click(function (e) {
+                    e.preventDefault();
+                    move(e, 'LEFT', 1500);
+                });
+
+                $("#RIGHT").click(function (e) {
+                    e.preventDefault();
+                    move(e, 'RIGHT', 1500);
+                });
+            });
+        </script>
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>© 2015 CrazyDriver, Inc.</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>
