@@ -13,6 +13,8 @@ Setup your WIFI module to connect with your (adhoc) network. Stuff the credentia
 
 [optional] Make sure your hostname is crazydriver
 
+[optional] For sound install mpg123
+
 ## Setup
 
 1. Mount continuous servo motors to gpio 11 and 12
